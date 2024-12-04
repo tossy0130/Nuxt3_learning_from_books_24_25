@@ -1,0 +1,20 @@
+■Nuxt.js ステート管理 アプリ　メモ
+
+＄npx nuxi init state
+
+# インターフェイス作成  .ts
+interfaces.ts
+
+# コンポーネンツフォルダ作成
+components/
+
+------
+
+# メンバー表示用 コンポーネント　作成 
+components/OneMember.vue
+
+------
+
+# 会員共通　画面 作成
+components/TheBaseSection.vue
+
