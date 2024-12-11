@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字列カウント</title>
+</head>
+<body>
+    <div id="app">
+        <h1>文字数</h1>
+        <textarea v-model="text" placeholder="ここに入力してください..." rows="5" cols="30"></textarea>
+
+        <p>
+        <input type="text" v-model="text" placeholder="text..."></input>
+        </p>
+
+        <p>文字数: {{ text.length }}</p>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script>
+        const { createApp } = Vue;
+    
+        createApp({
+          data() {
+            return {
+              text: '' // テキストボックスの内容
+            };
+          }
+        }).mount('#app');
+      </script>
+
+</body>
+</html>

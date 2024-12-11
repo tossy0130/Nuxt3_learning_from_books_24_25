@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+       
+        <p>現在値:{{ current }}</p>
+        <my-counter step="1" v-on:plus-minus="onplue"></my-counter>
+        <my-counter step="2" v-on:plus-minus="onplue"></my-counter>
+        <my-counter step="-1" v-on:plus-minus="onplue"></my-counter>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./emit_basic.js"></script>
+    
+</body>
+</html>
