@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/vuetify@3.0.0-beta.3/dist/vuetify.css" rel="stylesheet">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+</head>
+<body>
+    <div id="app">
+        <v-app id="inspire">
+            <v-navigation-drawer v-model="drawer" app>
+                <!-- サイドメニューバー  -->
+                <v-expansion-panels>
+                    <v-expansion-panel
+                      v-for="i in 3"
+                      :key="i"
+                      title="Item"
+                      text="Descroption"
+                    ></v-expansion-panel>
+                    <v-expansion-panel
+                    title="Item4"
+                    text="Item4"
+                    ></v-expansion-panel>
+                </v-expansion-panels>
+
+            </v-navigation-drawer>
+
+            <v-app-bar app>
+                <!-- ヘッドバー  -->
+                <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+                <v-toolbar-title>Application</v-toolbar-title>
+                <div class='foo' style='margin-left: auto;'>
+
+                </div>
+            </v-app-bar>
+
+            <v-main>
+                <!-- メインコンテンツ  -->
+                <v-row no-gutters>
+                    <v-col v-for="n in 25" :key="n">
+                        <v-card width="300" height="600" outlined></v-card>
+                    </v-col>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@3.0.0-beta.3/dist/vuetify.js"></script>
+    <script src="./test.js"></script>
+</body>
