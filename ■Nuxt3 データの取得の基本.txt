@@ -1,0 +1,31 @@
+■Nuxt3　データの取得の基本
+
+・API URL
+https://openweathermap.org/ 
+
+API key
+16614bcc2ccc6a261b0ca7b10b2fb193
+
+・vuetify3　参考
+https://qiita.com/nmorishita/items/ba752fcef5b183ccd5a2
+
+
+--------------
+# フォルダ削除
+rmdir /s /q node_modules
+
+# ファイル削除
+del /f /q package-lock.json
+---------------
+
+latest
+
+nuxt : バージョン : 3.8.2
+
+・ディレクトリ
+cd C:\Users\tokot\nuxt3_APP_24_12\
+
+# 01
+npx nuxi init data-nuxt3-test-app-001
+
+
