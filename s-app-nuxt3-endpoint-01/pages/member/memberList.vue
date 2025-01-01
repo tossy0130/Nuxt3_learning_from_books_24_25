@@ -26,7 +26,7 @@ const pending = asyncData.pending;
         <h2>会員リスト</h2>
 
         <p>
-            <NuxtPage v-bind:to="{name: 'member-memberAdd'}">新規登録</NuxtPage>
+            <NuxtLink v-bind:to="{name: 'member-memberAdd'}">新規登録</NuxtLink>
         </p>
 
         <!-- エンドポイントから、データを取得して表示する -->
