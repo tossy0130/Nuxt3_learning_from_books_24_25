@@ -1,0 +1,49 @@
+■ Nuxt 3  APP 作成 テスト
+
+C:\Users\tokot\nuxt3_APP_24_12
+
+# プロジェクト作成
+npx nuxi init app-nuxt3-App-24-12-001
+
+
+---------------------
+● Tailwind CSS 導入
+https://tailwindcss.com/docs/guides/nuxtjs
+
+npm install -D tailwindcss init
+
+postcss autoprefixer
+
+npx tailwindcss init
+
+assets/styles/
+
+# 日付はプロジェクト作成日
+$set COMPATIBILITY_DATE=2024-12-16
+$yarn add -D sass
+
+---------------------
+
+● Naive UI
+
+https://zenn.dev/shimiyu/articles/23d4b78f5d881a
+
+npx nuxi module add nuxtjs-naive-ui
+
+yarn add naive-ui
+
+-------------------------
+
+■ Json data 
+
+・URL
+https://jsonplaceholder.typicode.com/users
+
+手順
+
+
+-------------------------
+■ layouts
+
+
+
