@@ -1,6 +1,13 @@
 <template>
     <h1>HOME</h1>
 
+    <!-- エラーテスト -->
+    <li>
+        <NuxtLink v-bind:to="{name: 'errorHandlerBasic'}">
+            エラー表示実験
+        </NuxtLink>
+    </li>
+
     <nav id="breadcrumbs">
         <ul>
             <li>

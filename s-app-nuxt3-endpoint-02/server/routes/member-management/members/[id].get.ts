@@ -5,12 +5,27 @@ import type {Member, ReturnJSONMembers} from "@/interfaces";
 import {createMemberList} from "@/membersDB";
 
 export default defineEventHandler(
-    (event): ReturnJSONMembers => {
+   // (event): ReturnJSONMembers => {
+
+   async (event): Promise<ReturnJSONMembers> => {
+
         // ルートパラメータの取得
         const params = event.context.params;
 
+        // 空の MAP を用意
+        let memberList = new Map<number, Member>();
+
         // 一覧取得
-        const memberList = createMemberList();
+    //    const memberList = createMemberList();
+        const storage = useStorage();
+
+        const memberListStorage = await storage.getItem("local:member-management_members");
+
+        if(memberListStorage != null) {
+
+            // JSON オブジェクトを MAP へ変換    JSON => MAP
+            memberList = new Map<number, Member>(memberListStorage as any);
+        }
 
         // ルートパラメータの id を数値に変換
         // params!.id  =>  ! は、undefinedの場合は強制的に、undefinedじゃないとする。
